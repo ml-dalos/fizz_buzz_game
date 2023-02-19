@@ -1,4 +1,4 @@
-require_relative "../../lib/fizz_buzz.rb"
+require_relative "../../lib/fizz_buzz"
 
 describe FizzBuzz do
   describe "#run" do
@@ -39,7 +39,6 @@ describe FizzBuzz do
         it "12-10" do
           expect(described_class.new.perform("12-10")).to be_nil
         end
-
       end
 
       context "returns nil if decimal number" do
