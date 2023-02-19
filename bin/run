@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require_relative "../lib/fizz_buzz_game.rb"
+require_relative "../lib/fizz_buzz.rb"
 
 Signal.trap("INT") do
   puts "\nThanks for playing!"
@@ -9,5 +9,13 @@ end
 
 puts "Use ^C to exit the game"
 
-game = FizzBuzzGame.new
-loop { game.run }
+fizz_buzz = FizzBuzz.new
+loop do
+  puts "Enter number"
+  answer = fizz_buzz.perform(gets)
+  if answer.nil?
+    puts "Input must be an integer. Please try again."
+  else
+    puts answer
+  end
+end
