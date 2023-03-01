@@ -1,7 +1,12 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "3.2.0"
+ruby File.read(".ruby-version").strip
 
-gem "standard", "~> 1.9"
-gem "rspec", "~> 3.12"
+group :development, :test do
+  gem "standard", "~> 1.9"
+end
+
+group :test do
+  gem "rspec", "~> 3.12"
+end
