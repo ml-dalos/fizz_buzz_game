@@ -54,6 +54,10 @@ describe FizzBuzz do
       it "returns nil if empty string" do
         expect(described_class.new.perform("")).to be_nil
       end
+
+      it "return nil if input is nil" do
+        expect(described_class.new.perform(nil)).to be_nil
+      end
     end
 
     context "valid input" do

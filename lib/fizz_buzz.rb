@@ -3,6 +3,8 @@ class FizzBuzz
   BUZZ = "Buzz".freeze
 
   def perform(input)
+    return if input.nil?
+
     num = input_to_num(input.strip)
     num && num_to_fizz_buzz(num)
   end
@@ -10,7 +12,8 @@ class FizzBuzz
   private
 
   def input_to_num(input)
-    return nil if input.nil? || input !~ /^-?\d+$/
+    return unless /^-?\d+$/.match?(input)
+
     input.to_i
   end
 
