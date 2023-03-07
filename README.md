@@ -1,7 +1,7 @@
 # FIZZ BUZZ GAME
 
 ## What is it?
-It is a simple fizz buzz game writing in Ruby.
+It is a simple fizz buzz game written in Ruby.
 
 ### Rules:
 1. Enter number
@@ -19,3 +19,7 @@ It is a simple fizz buzz game writing in Ruby.
 ### In "production"
 1. run `docker build --tag fizz_buzz_game .`
 2. run `docker run --rm -it fizz_buzz_game`
+
+## What's next?
+I'm planning to use this repo for saving my solutions of different
+Leetcode/Codewars tasks and testing new features that I'm not used before.
