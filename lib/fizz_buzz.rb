@@ -1,5 +1,5 @@
 class FizzBuzz
-  FIZZ = "Fizz".freeze
+  FIZZ = 'Fizz'.freeze
   BUZZ = "Buzz".freeze
 
   def perform(input)
