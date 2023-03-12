@@ -6,7 +6,7 @@ WORKDIR /app
 
 # Install application gems
 ENV BUNDLE_WITHOUT="development test"
-COPY Gemfile Gemfile.lock ./
+COPY Gemfile Gemfile.lock .ruby-version ./
 RUN bundle install
 
 # Copy application code
