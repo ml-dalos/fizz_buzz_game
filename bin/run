@@ -2,6 +2,17 @@
 
 require_relative "../lib/fizz_buzz.rb"
 
+if ARGV.any?
+  if ARGV.size > 1 || !%w[--help -h].include?(ARGV.first)
+    puts "Invalid arguments #{ARGV}"
+    exit
+  end
+
+  puts File.read("man.txt")
+  ARGV.clear
+  exit
+end
+
 Signal.trap("INT") do
   puts "\nThanks for playing!"
   exit

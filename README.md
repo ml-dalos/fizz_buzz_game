@@ -3,6 +3,13 @@
 ## What is it?
 It is a simple fizz buzz game written in Ruby.
 
+## Technical Stack
+1. Ruby 3.2.0
+2. Standardrb for linting
+3. Rspec for tests
+4. Github Actions for CI
+5. Docker
+
 ### Rules:
 1. Enter number
 2. If number dividable by 3 returns Fizz!

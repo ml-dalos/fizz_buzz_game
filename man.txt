@@ -1,0 +1,10 @@
+Usage:
+Use ^C to exit the game
+run bin/run --help to show this manual
+
+Rules:
+1. Enter number
+2. If number dividable by 3 returns Fizz!
+3. If number divisible by 5 returns Buzz!
+4. If number divisible by 3 and 5 returns FizzBuzz!
+5. If none of the conditions above applies returns number.
